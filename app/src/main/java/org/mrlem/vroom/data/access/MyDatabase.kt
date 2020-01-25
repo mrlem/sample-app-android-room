@@ -9,7 +9,7 @@ import org.mrlem.vroom.data.model.MyData
  * - the entities
  * - the daos (data access objects)
  */
-@Database(entities = arrayOf(MyData::class), version = 1)
+@Database(entities = [MyData::class], version = 1)
 abstract class MyDatabase : RoomDatabase() {
 
     abstract fun myDataDao(): MyDataDao
